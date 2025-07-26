@@ -8,22 +8,11 @@
         embedded
         vr-mode-ui="enabled: false"
         renderer="logarithmicDepthBuffer: true;"
-        arjs="sourceType: webcam; debugUIEnabled: false;"
+        arjs="sourceType: webcam; debugUIEnabled: true;"
 >
-    <a-nft
-            type="nft"
-            url="marker/markup_export"
-            smooth="true"
-            smoothCount="10"
-            smoothTolerance="0.01"
-            smoothThreshold="5"
-    >
-        <a-entity
-                gltf-model="singletree.glb"
-                scale="0.5 0.5 0.5"
-                position="0 0 0"
-        ></a-entity>
-    </a-nft>
+    <a-marker preset="hiro">
+        <a-box position="0 0.5 0" material="color: red;"></a-box>
+    </a-marker>
 
     <a-entity camera></a-entity>
 </a-scene>
